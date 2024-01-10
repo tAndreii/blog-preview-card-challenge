@@ -1,0 +1,99 @@
+/* rule for the box-sizing */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+/* font rules */
+@font-face {
+    font-family: "Figtree";
+    src: url("../assets/fonts/static/Figtree-SemiBold.ttf");
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Figtree";
+    src: url("../assets/fonts/static/Figtree-ExtraBold.ttf");
+    font-style: normal;
+    font-weight: 800;
+}
+
+/* making all default margin equal to 0 */
+body, h4, p, h1 {
+    margin: 0;
+}
+
+body {
+    background-color: hsl(47, 88%, 63%);
+    height: 100vh;
+    font-size: 16px;
+    font-family: "Figtree";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container {
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(0, 0%, 7%);
+    box-shadow: 8px 8px 0px 1px #000000;
+    border-radius: 18px;
+    height: 530px;
+    width: 380px;
+    padding: 23px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.container img {
+    border-radius: 15px;
+    margin-bottom: 4px;
+}
+
+.container h4 {
+    background-color: hsl(47, 88%, 63%);
+    border-radius: 4px;
+    width: 25%;
+    height: 30px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -4px;
+}
+
+.published {
+    font-size: 15px;
+}
+
+.article-title:hover {
+    color: hsl(47, 88%, 63%);
+    cursor: pointer;
+}
+
+.article-text {
+    color: hsl(0, 0%, 50%);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.profile-photo {
+    width: 37px;
+    height: 37px;
+}
+
+.author {
+    font-weight: 800;
+}
